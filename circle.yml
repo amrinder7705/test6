@@ -1,5 +1,5 @@
 general:
-   build_dir: src\site
+   build_dir: src/site
    artifacts:
      - $CIRCLE_TEST_REPORTS
      - target
