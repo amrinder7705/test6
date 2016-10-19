@@ -1,7 +1,3 @@
-machine:
-  ruby:
-    version: rbx-2.2.6
-
 general:
    build_dir: src
    artifacts:
@@ -13,5 +9,5 @@ test:
    # - mvn clean install
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - find . -type f -regex ".*/target/.*-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \
+    - find . -type f -regex ".*/target/.*-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
     - cp $CIRCLE_TEST_REPORTS/junit/* $CIRCLE_ARTIFACTS;
