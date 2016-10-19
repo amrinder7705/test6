@@ -1,5 +1,5 @@
 general:
-  build_dir: \test6\
+  build_dir: \src\test\java\uk\co\jemos\podam\test
   
 test:
  post:
